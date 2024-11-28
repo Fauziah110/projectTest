@@ -2,6 +2,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>projectTest</groupId>
   <artifactId>projectTest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
@@ -22,7 +23,7 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- Optional: JSP API for JSP support -->
+    <!-- Optional: JSP API for JSP support (remove if not using JSP) -->
     <dependency>
       <groupId>jakarta.servlet.jsp</groupId>
       <artifactId>jakarta.servlet.jsp-api</artifactId>
@@ -38,7 +39,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
-          <release>17</release>
+          <source>17</source>
+          <target>17</target>
         </configuration>
       </plugin>
 
@@ -49,4 +51,5 @@
       </plugin>
     </plugins>
   </build>
+
 </project>
